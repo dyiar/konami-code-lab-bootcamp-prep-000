@@ -9,13 +9,13 @@ document.body.addEventListener('keydown', function(e) {
   if (code[index] === key) {
     index++;
 
-    if (index = code.length) {
+    if (index === code.length) {
       alert("Hurray!");
 
       index = 0;
     }
-    else {
-      index = 0;
-    }
+  }else {
+    index = 0;
+  }
   });
 }
